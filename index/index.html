@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Era Tecno </title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans min-h-screen flex flex-col justify-between selection:bg-red-500 selection:text-white">
+
+  <header class="bg-gray-900/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50 px-6 py-4 md:px-12">
+
+  <div class="flex justify-between items-center">
+
+    <!-- LOGO -->
+    <a href="index.html"
+      class="text-2xl md:text-3xl font-extrabold uppercase tracking-wider text-red-500 hover:scale-105 transition-transform duration-200 cursor-pointer">
+      Era <span class="text-white">Tecno</span>
+    </a>
+
+    <!-- MENU DE ESCRITORIO -->
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+      <a href="index.html" class="text-white border-b-2 border-red-500 pb-1">Inicio</a>
+      <a href="./navlinks/precios.html" class="hover:text-red-500 transition-colors duration-200">Precios</a>
+      <a href="./navlinks/nosotros.html" class="hover:text-red-500 transition-colors duration-200">Sobre Nosotros</a>
+      <a href="./navlinks/contacto.html" class="hover:text-red-500 transition-colors duration-200">Contacto</a>
+    </nav>
+
+    <!-- BOTONES DERECHA ESCRITORIO -->
+    <div class="hidden md:flex items-center gap-4 text-sm font-semibold">
+      <a href="./navlinks/ingresar.html"
+        class="hover:text-red-500 transition-colors duration-200">
+        Ingresar
+      </a>
+
+      <a class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg shadow-lg shadow-red-600/20 transition-all duration-200 transform hover:-translate-y-0.5"
+        href="./navlinks/registro.html">
+        Registrarse
+      </a>
+    </div>
+
+    <!-- BOTON HAMBURGUESA -->
+    <button id="menu-btn"
+      class="block md:hidden text-white text-3xl focus:outline-none">
+      ☰
+    </button>
+
+  </div>
+
+  <!-- MENU MOBILE -->
+  <div id="mobile-menu"
+    class="hidden md:hidden flex flex-col gap-4 mt-6 text-gray-300 text-lg font-medium">
+
+    <a href="index.html" class="hover:text-red-500">Inicio</a>
+    <a href="./navlinks/precios.html" class="hover:text-red-500">Precios</a>
+    <a href="./navlinks/nosotros.html" class="hover:text-red-500">Sobre Nosotros</a>
+    <a href="./navlinks/contacto.html" class="hover:text-red-500">Contacto</a>
+
+    <hr class="border-gray-800">
+
+    <a href="./navlinks/ingresar.html" class="hover:text-red-500">
+      Ingresar
+    </a>
+
+    <a href="./navlinks/registro.html"
+      class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-center">
+      Registrarse
+    </a>
+
+  </div>
+
+</header>
+
+  <main class="max-w-7xl mx-auto px-6 py-8 md:py-12 grid md:grid-cols-2 gap-12 items-center w-full">
+
+    <div class="space-y-6 text-center md:text-left">
+      
+      <div class="inline-flex items-center gap-2 bg-red-500/10 text-red-400 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full border border-red-500/20">
+        <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+        Hace funcionar tu negocio
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none text-white">
+        Tu programa,<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">
+          Listo y funcionando.
+        </span>
+      </h1>
+      <a href="./navlinks/trabajo.html"
+      class="text-base sm:text-lg text-gray-400 max-w-xl mx-auto md:mx-0 leading-relaxed">
+        ¿Tenés una empresa o negocio y necesitás automatizar tu trabajo? 
+        Te traemos la <span class="text-red-400 font-semibold underline decoration-red-500/40">solución definitiva</span>.
+      </p>
+    </a>
+      
+      <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-4">
+        <a href="./navlinks/registro.html" class="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-bold px-8 py-3.5 rounded-xl shadow-xl shadow-red-900/30 text-center transition-all duration-200 transform hover:-translate-y-0.5">
+          Comenzar Ahora
+        </a>
+        <a href="./navlinks/trabajo.html" class="border border-gray-700 hover:border-gray-500 text-gray-300 hover:text-white font-medium px-6 py-3.5 rounded-xl text-center transition-all duration-200 flex items-center justify-center gap-2 bg-gray-900/30">
+          <span>▶</span> Mirá cómo trabajamos
+        </a>
+      </div>
+
+    </div>
+    
+    <div class="flex justify-center items-center">
+      <div class="relative group w-full max-w-sm aspect-square bg-gradient-to-br from-red-600 to-purple-300 rounded-3xl p-1 shadow-2xl shadow-red-500/10 transform hover:rotate-1 transition-transform duration-300">
+        <div class="w-full h-full bg-gray-900 rounded-[22px] flex items-center justify-center overflow-hidden relative">
+          <div class="absolute -inset-10 bg-gradient-to-r from-red-500 to-purple-300 opacity-20 blur-lg group-hover:opacity-40 transition-opacity duration-300"></div>
+          
+          <div class="text-4xl font-black uppercase tracking-wider text-white z-10 select-none animate-pulse">
+            Era <span class="text-red-500">Tecno</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="max-w-7xl mx-auto px-6 pt-4 pb-16 space-y-16 w-full">
+  
+  <div class="flex flex-wrap justify-center items-center gap-4 border-b border-gray-900 pb-6" id="tabs-container">
+        <button data-tab="disena" class="tab-btn text-gray-500 hover:text-gray-300 font-medium px-6 py-2.5 rounded-xl transition duration-200">
+      Diseñá
+    </button>
+    
+    <button data-tab="facilita" class="tab-btn text-gray-500 hover:text-gray-300 font-medium px-6 py-2.5 rounded-xl transition duration-200">
+      Facilitá
+    </button>
+    <button data-tab="renovate" class="tab-btn bg-gray-900 border border-red-500/30 text-white font-medium px-6 py-2.5 rounded-xl shadow-lg shadow-red-950/20 transition-all duration-200">
+      Renovate
+    </button>
+
+    <button data-tab="ejecuta" class="tab-btn text-gray-500 hover:text-gray-300 font-medium px-6 py-2.5 rounded-xl transition duration-200">
+      Ejecutá
+    </button>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    
+    <div class="overflow-hidden rounded-2xl border border-gray-800 bg-gray-900 shadow-2xl relative group aspect-[4/3]">
+     <img id="tab-image" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Contenido Era Tecno" class="w-full h-full object-cover transition-all duration-300 opacity-90 group-hover:opacity-100">
+      <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent pointer-events-none"></div>
+    </div>
+
+    <div class="space-y-6 text-center md:text-left">
+      <h2 id="tab-title" class="text-4xl md:text-5xl font-black text-white tracking-tight leading-tight transition-all duration-300">
+        Diseño de páginas<br>web.
+      </h2>
+      
+      <p id="tab-desc" class="text-gray-400 text-base sm:text-lg leading-relaxed max-w-md mx-auto md:mx-0 transition-all duration-300">
+        ¿Tenés tu empresa o negocio y necesitás mostrarla al mundo?<br>¡No dudes en contactarnos!<br>Tu página web lista en cuestión de horas.
+      </p>
+
+      <div class="pt-2">
+        <a href="./navlinks/contacto.html" class="inline-flex items-center gap-2 text-red-500 font-bold hover:text-red-400 transition-colors group">
+          Contactanos ahora! 
+          <span class="transform group-hover:translate-x-1 transition-transform duration-200">→</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+ 
+  const tabData = {
+    disena: {
+      title: "Diseño de páginas<br>web.",
+      desc: "¿Tenés tu empresa o negocio y necesitás mostrarla al mundo?<br>¡No dudes en contactarnos!<br>Tu página web lista en cuestión de horas.",
+      image: "https://i.postimg.cc/76bFC0qT/Imagen1.png" 
+    },
+    facilita: {
+      title: "Automatizá tu<br>flujo diario.",
+      desc: "Olvidate de las tareas repetitivas en Excel o papel. Creamos herramientas internas que hacen el trabajo pesado por vos y tu equipo de manera automática.",
+      image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80" 
+    },
+    renovate: {
+      title: "Experiencias de<br>Usuario Premium.",
+      desc: "No solo programamos, estructuramos interfaces estéticas, veloces y pensadas para que tus clientes naveguen cómodos tanto en el celular como en la PC.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+      
+    },
+    ejecuta: {
+      title: "Sistemas Listos y<br>Funcionando.",
+      desc: "Hacemos el despliegue en la nube con altos estándares de seguridad. Tu plataforma online, estable y monitoreada por profesionales 24/7.",
+      image: "https://images.unsplash.com/photo-1551808525-51a94da548ce?auto=format&fit=crop&w=800&q=80" 
+    }
+  };
+
+ 
+  const buttons = document.querySelectorAll('.tab-btn');
+  const tabTitle = document.getElementById('tab-title');
+  const tabDesc = document.getElementById('tab-desc');
+  const tabImage = document.getElementById('tab-image');
+
+ 
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const tabName = button.getAttribute('data-tab');
+      
+     
+      tabImage.style.opacity = 0;
+      tabTitle.style.opacity = 0;
+      tabDesc.style.opacity = 0;
+
+      setTimeout(() => {
+        tabTitle.innerHTML = tabData[tabName].title;
+        tabDesc.innerHTML = tabData[tabName].desc;
+        tabImage.src = tabData[tabName].image;
+        
+        tabImage.style.opacity = 0.9;
+        tabTitle.style.opacity = 1;
+        tabDesc.style.opacity = 1;
+      }, 200);
+
+      
+      buttons.forEach(btn => {
+        btn.className = "tab-btn text-gray-500 hover:text-gray-300 font-medium px-6 py-2.5 rounded-xl transition duration-200 ";
+      });
+      
+     
+      button.className = "tab-btn bg-gray-900 border border-red-500/30 text-white font-medium px-6 py-2.5 rounded-xl shadow-lg shadow-red-950/20 transition-all duration-200";
+    });
+  });
+  document.querySelector('.tab-btn').click();
+</script>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+        <div class="pt-2">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="border-t border-gray-900 bg-gray-900/10 py-20 text-center px-6 w-full">
+    <div class="max-w-3xl mx-auto space-y-4">
+      
+      <h3 class="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight">
+        Productividad, Sin Final.
+      </h3>
+      
+      <p class="text-gray-500 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed pt-2">
+        Optimizá tu eficiencia con nuestra solución informática de vanguardia, que incluye un panel de control intuitivo para mejorar su flujo de trabajo.
+      </p>
+
+    </div>
+  </section>
+
+  <footer class="bg-gray-900/40 border-t border-gray-900 py-6 text-center px-6">
+    <p class="text-xs sm:text-sm text-gray-500 max-w-2xl mx-auto">
+       Tenemos un equipo de más de <span class="text-gray-300 font-semibold">10 profesionales</span> trabajando para ofrecerte el mejor servicio del mercado.
+    </p>
+    <div class= "animate-pulse">
+  <a href="index.html" class="text-white border-b-2 border-red-500 pb-1">Volver arriba</a>
+  </div>
+ </footer>
+
+</body>
+</html>

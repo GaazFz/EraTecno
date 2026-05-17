@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros - Era Tecno</title>
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans min-h-screen flex flex-col justify-between selection:bg-red-500 selection:text-white">
+
+  <header class="bg-gray-900/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50 px-6 py-4 md:px-12">
+
+  <div class="flex justify-between items-center">
+
+    <!-- LOGO -->
+    <a href="../index.html"
+      class="text-2xl md:text-3xl font-extrabold uppercase tracking-wider text-red-500 hover:scale-105 transition-transform duration-200 cursor-pointer">
+      Era <span class="text-white">Tecno</span>
+    </a>
+
+    <!-- MENU DE ESCRITORIO -->
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+      <a href="../index.html" class="text-white border-b-2 border-red-500 pb-1">Inicio</a>
+      <a href="precios.html" class="hover:text-red-500 transition-colors duration-200">Precios</a>
+      <a href="nosotros.html" class="hover:text-red-500 transition-colors duration-200">Sobre Nosotros</a>
+      <a href="contacto.html" class="hover:text-red-500 transition-colors duration-200">Contacto</a>
+    </nav>
+
+    <!-- BOTONES DERECHA ESCRITORIO -->
+    <div class="hidden md:flex items-center gap-4 text-sm font-semibold">
+      <a href="ingresar.html"
+        class="hover:text-red-500 transition-colors duration-200">
+        Ingresar
+      </a>
+
+      <a class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg shadow-lg shadow-red-600/20 transition-all duration-200 transform hover:-translate-y-0.5"
+        href="registro.html">
+        Registrarse
+      </a>
+    </div>
+
+    <!-- BOTON HAMBURGUESA -->
+    <button id="menu-btn"
+      class="block md:hidden text-white text-3xl focus:outline-none">
+      ☰
+    </button>
+
+  </div>
+
+  <!-- MENU MOBILE -->
+  <div id="mobile-menu"
+    class="hidden md:hidden flex flex-col gap-4 mt-6 text-gray-300 text-lg font-medium">
+
+    <a href="../index.html" class="hover:text-red-500">Inicio</a>
+    <a href="precios.html" class="hover:text-red-500">Precios</a>
+    <a href="nosotros.html" class="hover:text-red-500">Sobre Nosotros</a>
+    <a href="contacto.html" class="hover:text-red-500">Contacto</a>
+
+    <hr class="border-gray-800">
+
+    <a href="ingresar.html" class="hover:text-red-500">
+      Ingresar
+    </a>
+
+    <a href="registro.html"
+      class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-center">
+      Registrarse
+    </a>
+
+  </div>
+
+</header>
+
+  <!-- SOBRE NOSOTROS -->
+  <main class="max-w-4xl mx-auto px-6 py-16 flex-grow flex flex-col justify-center">
+    <div class="space-y-6 text-center md:text-left">
+      <div class="text-red-500 text-xs font-bold tracking-widest uppercase">NUESTRO EQUIPO</div>
+      <h1 class="text-4xl md:text-5xl font-black text-white">Impulsando la transformación digital</h1>
+      <p class="text-lg text-gray-400 leading-relaxed">
+        En <span class="text-white font-semibold">Era Tecno</span> nos dedicamos a construir puentes entre las ideas complejas y las soluciones de software eficientes. Nacimos con el objetivo de erradicar los procesos manuales y repetitivos que le quitan tiempo valioso a las empresas.
+      </p>
+      <p class="text-gray-400 leading-relaxed">
+        Creemos firmemente que cada negocio, sin importar su tamaño, merece contar con herramientas tecnológicas de primer nivel que optimicen su rendimiento diario de manera automática.
+      </p>
+    </div>
+
+    <!-- Estadísticas -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12 pt-12 border-t border-gray-900 text-center">
+      <div>
+        <div class="text-3xl md:text-4xl font-black text-red-500">+10</div>
+        <div class="text-xs text-gray-500 uppercase font-medium mt-1">Profesionales Activos</div>
+      </div>
+      <div>
+        <div class="text-3xl md:text-4xl font-black text-white">+50</div>
+        <div class="text-xs text-gray-500 uppercase font-medium mt-1">Empresas Automatizadas</div>
+      </div>
+      <div class="col-span-2 md:col-span-1">
+        <div class="text-3xl md:text-4xl font-black text-white">99.9%</div>
+        <div class="text-xs text-gray-500 uppercase font-medium mt-1">Uptime de Sistemas</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-900/40 border-t border-gray-900 py-6 text-center px-6">
+    <p class="text-xs sm:text-sm text-gray-500 max-w-2xl mx-auto">
+       Tenemos un equipo de más de <span class="text-gray-300 font-semibold">10 profesionales</span> trabajando para ofrecerte el mejor servicio del mercado.
+    </p>
+    <div class= "animate-pulse">
+  <a href="../index.html" class="text-white border-b-2 border-red-500 pb-1">Volver al inicio</a>
+    </div>
+  </footer>
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+</body>
+</html>
